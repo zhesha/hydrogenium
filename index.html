@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <script src="//cdn.jsdelivr.net/phaser/2.2.2/phaser.min.js"></script>
     <script src="js/constants.js"></script>
+    <script src="js/level.js"></script>
     <script src="js/create.js"></script>
 </head>
 <body>
@@ -23,6 +24,8 @@
         gameOverText = null,
         jumpKey = null;
 
+    var trigger, blockNumber;
+
     var PhaserGame = function () {};
     PhaserGame.prototype = {
 
@@ -36,6 +39,7 @@
             this.load.image('trees', 'assets/trees-h.png');
             this.load.image('background', 'assets/clouds-h.png');
             this.load.image('block', 'assets/block.png');
+            this.load.image('deadblock', 'assets/deadlyblock.png');
             this.load.spritesheet('dude', 'assets/dude.png', PLAYER_WIDTH, PLAYER_HEIGHT);
         },
 
@@ -54,6 +58,15 @@
             trees.tilePosition.x = -(this.camera.x * 0.9);
 
             this.physics.arcade.overlap(player, blocks, this.gameOver, null, this);
+            if (Phaser.Line.intersects(new Phaser.Line(player.x, player.y, player.x + PLAYER_WIDTH, player.y), trigger)) {
+                level[blockNumber].onTrigger();
+                blockNumber++;
+                if (blockNumber > level.length) {
+                    return;
+                }
+
+                trigger = new Phaser.Line(level[blockNumber].triggerX, 0, level[blockNumber].triggerX, GAME_CANVAS_WIDTH);
+            }
 
             if (jumpKey.isDown && player.body.y >= GAME_CANVAS_HEIGHT-PLAYER_HEIGHT)
             {

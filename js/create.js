@@ -30,6 +30,10 @@ var create = {
     level: function () {
         blocks = game.add.group();
         blocks.enableBody = true;
-        blocks.create(200, game.world.height - BLOCK_SIZE, 'block');
+        level.forEach(function (box) {
+            blocks.create(box.boxPosition.x, box.boxPosition.y, 'block');
+        });
+        blockNumber = 0;
+        trigger = new Phaser.Line(level[0].triggerX, 0, level[0].triggerX, GAME_CANVAS_WIDTH);
     }
 };
