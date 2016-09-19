@@ -1,0 +1,12 @@
+/**
+ * Created by sashaz on 12.09.16.
+ */
+
+var GAME_CANVAS_WIDTH = 640,
+    GAME_CANVAS_HEIGHT = 480,
+    PLAYER_WIDTH = 32,
+    PLAYER_HEIGHT = 48,
+    PLAYER_GRAVITY = 300,
+    PLAYER_VELOCITY = 150,
+    PLAYER_JUMP_VELOCITY = -200,
+    BLOCK_SIZE = 40;
