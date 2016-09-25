@@ -30,7 +30,7 @@
     PhaserGame.prototype = {
 
         init: function () {
-            this.world.resize(GAME_CANVAS_WIDTH*2, GAME_CANVAS_HEIGHT);
+            this.world.resize(GAME_CANVAS_WIDTH*5, GAME_CANVAS_HEIGHT);
         },
 
         preload: function () {
@@ -59,9 +59,9 @@
 
             this.physics.arcade.overlap(player, blocks, this.gameOver, null, this);
             if (Phaser.Line.intersects(new Phaser.Line(player.x, player.y, player.x + PLAYER_WIDTH, player.y), trigger)) {
-                level[blockNumber].onTrigger();
+                level[blockNumber].onTrigger(blocks.children[blockNumber]);
                 blockNumber++;
-                if (blockNumber > level.length) {
+                if (blockNumber >= level.length) {
                     return;
                 }
 

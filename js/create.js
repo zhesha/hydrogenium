@@ -11,7 +11,7 @@ var create = {
     },
 
     player: function () {
-        player = game.add.sprite(0, GAME_CANVAS_HEIGHT-PLAYER_HEIGHT, 'dude');
+        player = game.add.sprite(150, GAME_CANVAS_HEIGHT-PLAYER_HEIGHT, 'dude');
 
         game.physics.arcade.enable(player);
 
