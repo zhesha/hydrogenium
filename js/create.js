@@ -19,8 +19,8 @@ var create = {
         player.body.collideWorldBounds = true;
 
         //  Our two animations, walking left and right.
-        player.animations.add('stop', [4], 10, true);
-        player.animations.add('right', [5, 6, 7, 8], 10, true);
+        player.animations.add('stop', [1], 10, true);
+        player.animations.add('right', [2, 3, 4, 5], 15, true);
         game.camera.follow(player);
 
         player.body.velocity.x = PLAYER_VELOCITY;
