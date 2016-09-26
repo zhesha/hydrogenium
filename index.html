@@ -7,6 +7,7 @@
     <script src="js/constants.js"></script>
     <script src="js/level.js"></script>
     <script src="js/create.js"></script>
+    <script src="js/update.js"></script>
 </head>
 <body>
 
@@ -21,10 +22,11 @@
         trees = null,
         player = null,
         blocks = null,
-        gameOverText = null,
         jumpKey = null;
 
     var trigger, blockNumber;
+
+    var text, gamePhase = "start";
 
     var PhaserGame = function () {};
     PhaserGame.prototype = {
@@ -38,8 +40,7 @@
 
             this.load.image('trees', 'assets/trees-h.png');
             this.load.image('background', 'assets/clouds-h.png');
-            this.load.image('block', 'assets/block.png');
-            this.load.image('deadblock', 'assets/deadlyblock.png');
+            this.load.spritesheet('block', 'assets/block.png', BLOCK_SIZE, 38);
             this.load.spritesheet('dude', 'assets/dude.png', PLAYER_WIDTH, PLAYER_HEIGHT);
         },
 
@@ -47,40 +48,32 @@
             create.background();
             create.player();
             create.level();
-
+            text = game.add.text(player.x, game.world.height/2, '', { fontSize: '52px', fill: '#000' });
             //controls.
             jumpKey = game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
             game.input.keyboard.addKeyCapture(Phaser.Keyboard.SPACEBAR);
         },
 
+
         update: function () {
-            background.tilePosition.x = -(this.camera.x * 0.7);
-            trees.tilePosition.x = -(this.camera.x * 0.9);
-
-            this.physics.arcade.overlap(player, blocks, this.gameOver, null, this);
-            if (Phaser.Line.intersects(new Phaser.Line(player.x, player.y, player.x + PLAYER_WIDTH, player.y), trigger)) {
-                level[blockNumber].onTrigger(blocks.children[blockNumber]);
-                blockNumber++;
-                if (blockNumber >= level.length) {
-                    return;
-                }
-
-                trigger = new Phaser.Line(level[blockNumber].triggerX, 0, level[blockNumber].triggerX, GAME_CANVAS_WIDTH);
+            if (gamePhase == "start") {
+                update.start();
             }
-
-            if (jumpKey.isDown && player.body.y >= GAME_CANVAS_HEIGHT-PLAYER_HEIGHT)
-            {
-                player.body.velocity.y = PLAYER_JUMP_VELOCITY;
+            if (gamePhase == "go") {
+                update.go();
+            }
+            if (gamePhase == "end") {
+                update.end();
             }
         },
 
         gameOver: function (player, block) {
-            //  Add and update the score
             player.body.velocity.x = 0;
             player.x -= 5;
             player.play('stop');
-            gameOverText = game.add.text(player.x, game.world.height/2, '', { fontSize: '52px', fill: '#000' });
-            gameOverText.text = 'GAME OVER';
+            text.x = player.x;
+            text.text = 'GAME OVER';
+            gamePhase = "end";
         }
 
     };
