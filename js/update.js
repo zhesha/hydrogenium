@@ -38,5 +38,13 @@ var update = {
         player.play('stop');
         text.x = player.x;
         text.text = 'GAME OVER';
+        gamePhase = null;
+        if (player) {
+            var death = game.add.sprite(player.x, player.y, 'death');
+            death.animations.add('death', [1, 2, 3, 4, 5, 6], 15, false);
+            death.play("death");
+            player.kill();
+            player = null
+        }
     }
 };
