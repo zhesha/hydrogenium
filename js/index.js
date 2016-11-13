@@ -24,11 +24,7 @@ PhaserGame.prototype = {
     preload: function () {
         this.load.crossOrigin = 'anonymous';
 
-        this.load.image('trees', 'assets/trees-h.png');
-        this.load.image('background', 'assets/clouds-h.png');
-        this.load.spritesheet('death', 'assets/death.png', 52, 51);
-        this.load.spritesheet('block', 'assets/block.png', BLOCK_SIZE, 38);
-        this.load.spritesheet('dude', 'assets/dude.png', PLAYER_WIDTH, PLAYER_HEIGHT);
+        preload(this.load);
     },
 
     create: function () {
