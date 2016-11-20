@@ -1,0 +1,571 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EBD7BD5A1DE23F7900A2B1D7 /* app.min.js in Resources */ = {isa = PBXBuildFile; fileRef = EBD7BD571DE23F7900A2B1D7 /* app.min.js */; };
+		EBD7BD5B1DE23F7900A2B1D7 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = EBD7BD581DE23F7900A2B1D7 /* index.html */; };
+		EBD7BD5C1DE23F7900A2B1D7 /* phaser.min.js in Resources */ = {isa = PBXBuildFile; fileRef = EBD7BD591DE23F7900A2B1D7 /* phaser.min.js */; };
+		EBD7BD621DE2400300A2B1D7 /* block.png in Resources */ = {isa = PBXBuildFile; fileRef = EBD7BD5D1DE2400300A2B1D7 /* block.png */; };
+		EBD7BD631DE2400300A2B1D7 /* clouds-h.png in Resources */ = {isa = PBXBuildFile; fileRef = EBD7BD5E1DE2400300A2B1D7 /* clouds-h.png */; };
+		EBD7BD641DE2400300A2B1D7 /* death.png in Resources */ = {isa = PBXBuildFile; fileRef = EBD7BD5F1DE2400300A2B1D7 /* death.png */; };
+		EBD7BD651DE2400300A2B1D7 /* dude.png in Resources */ = {isa = PBXBuildFile; fileRef = EBD7BD601DE2400300A2B1D7 /* dude.png */; };
+		EBD7BD661DE2400300A2B1D7 /* trees-h.png in Resources */ = {isa = PBXBuildFile; fileRef = EBD7BD611DE2400300A2B1D7 /* trees-h.png */; };
+		EBD973671DAC1FCC004DFDE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD973661DAC1FCC004DFDE6 /* AppDelegate.swift */; };
+		EBD973691DAC1FCC004DFDE6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD973681DAC1FCC004DFDE6 /* ViewController.swift */; };
+		EBD9736C1DAC1FCC004DFDE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD9736A1DAC1FCC004DFDE6 /* Main.storyboard */; };
+		EBD9736E1DAC1FCC004DFDE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBD9736D1DAC1FCC004DFDE6 /* Assets.xcassets */; };
+		EBD973711DAC1FCC004DFDE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD9736F1DAC1FCC004DFDE6 /* LaunchScreen.storyboard */; };
+		EBD9737C1DAC1FCC004DFDE6 /* hydrogeniumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD9737B1DAC1FCC004DFDE6 /* hydrogeniumTests.swift */; };
+		EBD973871DAC1FCC004DFDE6 /* hydrogeniumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD973861DAC1FCC004DFDE6 /* hydrogeniumUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EBD973781DAC1FCC004DFDE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBD9735B1DAC1FCC004DFDE6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBD973621DAC1FCC004DFDE6;
+			remoteInfo = hydrogenium;
+		};
+		EBD973831DAC1FCC004DFDE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBD9735B1DAC1FCC004DFDE6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBD973621DAC1FCC004DFDE6;
+			remoteInfo = hydrogenium;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EBD7BD571DE23F7900A2B1D7 /* app.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = app.min.js; sourceTree = "<group>"; };
+		EBD7BD581DE23F7900A2B1D7 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		EBD7BD591DE23F7900A2B1D7 /* phaser.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = phaser.min.js; sourceTree = "<group>"; };
+		EBD7BD5D1DE2400300A2B1D7 /* block.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block.png; sourceTree = "<group>"; };
+		EBD7BD5E1DE2400300A2B1D7 /* clouds-h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clouds-h.png"; sourceTree = "<group>"; };
+		EBD7BD5F1DE2400300A2B1D7 /* death.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = death.png; sourceTree = "<group>"; };
+		EBD7BD601DE2400300A2B1D7 /* dude.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dude.png; sourceTree = "<group>"; };
+		EBD7BD611DE2400300A2B1D7 /* trees-h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "trees-h.png"; sourceTree = "<group>"; };
+		EBD973631DAC1FCC004DFDE6 /* hydrogenium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hydrogenium.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBD973661DAC1FCC004DFDE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EBD973681DAC1FCC004DFDE6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EBD9736B1DAC1FCC004DFDE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EBD9736D1DAC1FCC004DFDE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EBD973701DAC1FCC004DFDE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EBD973721DAC1FCC004DFDE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBD973771DAC1FCC004DFDE6 /* hydrogeniumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hydrogeniumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBD9737B1DAC1FCC004DFDE6 /* hydrogeniumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hydrogeniumTests.swift; sourceTree = "<group>"; };
+		EBD9737D1DAC1FCC004DFDE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBD973821DAC1FCC004DFDE6 /* hydrogeniumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hydrogeniumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBD973861DAC1FCC004DFDE6 /* hydrogeniumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hydrogeniumUITests.swift; sourceTree = "<group>"; };
+		EBD973881DAC1FCC004DFDE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EBD973601DAC1FCC004DFDE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBD973741DAC1FCC004DFDE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBD9737F1DAC1FCC004DFDE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EBD7BD561DE23F7900A2B1D7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EBD7BD5D1DE2400300A2B1D7 /* block.png */,
+				EBD7BD5E1DE2400300A2B1D7 /* clouds-h.png */,
+				EBD7BD5F1DE2400300A2B1D7 /* death.png */,
+				EBD7BD601DE2400300A2B1D7 /* dude.png */,
+				EBD7BD611DE2400300A2B1D7 /* trees-h.png */,
+				EBD7BD571DE23F7900A2B1D7 /* app.min.js */,
+				EBD7BD581DE23F7900A2B1D7 /* index.html */,
+				EBD7BD591DE23F7900A2B1D7 /* phaser.min.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EBD9735A1DAC1FCC004DFDE6 = {
+			isa = PBXGroup;
+			children = (
+				EBD973651DAC1FCC004DFDE6 /* hydrogenium */,
+				EBD9737A1DAC1FCC004DFDE6 /* hydrogeniumTests */,
+				EBD973851DAC1FCC004DFDE6 /* hydrogeniumUITests */,
+				EBD973641DAC1FCC004DFDE6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EBD973641DAC1FCC004DFDE6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EBD973631DAC1FCC004DFDE6 /* hydrogenium.app */,
+				EBD973771DAC1FCC004DFDE6 /* hydrogeniumTests.xctest */,
+				EBD973821DAC1FCC004DFDE6 /* hydrogeniumUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EBD973651DAC1FCC004DFDE6 /* hydrogenium */ = {
+			isa = PBXGroup;
+			children = (
+				EBD7BD561DE23F7900A2B1D7 /* Resources */,
+				EBD973661DAC1FCC004DFDE6 /* AppDelegate.swift */,
+				EBD973681DAC1FCC004DFDE6 /* ViewController.swift */,
+				EBD9736A1DAC1FCC004DFDE6 /* Main.storyboard */,
+				EBD9736D1DAC1FCC004DFDE6 /* Assets.xcassets */,
+				EBD9736F1DAC1FCC004DFDE6 /* LaunchScreen.storyboard */,
+				EBD973721DAC1FCC004DFDE6 /* Info.plist */,
+			);
+			path = hydrogenium;
+			sourceTree = "<group>";
+		};
+		EBD9737A1DAC1FCC004DFDE6 /* hydrogeniumTests */ = {
+			isa = PBXGroup;
+			children = (
+				EBD9737B1DAC1FCC004DFDE6 /* hydrogeniumTests.swift */,
+				EBD9737D1DAC1FCC004DFDE6 /* Info.plist */,
+			);
+			path = hydrogeniumTests;
+			sourceTree = "<group>";
+		};
+		EBD973851DAC1FCC004DFDE6 /* hydrogeniumUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EBD973861DAC1FCC004DFDE6 /* hydrogeniumUITests.swift */,
+				EBD973881DAC1FCC004DFDE6 /* Info.plist */,
+			);
+			path = hydrogeniumUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EBD973621DAC1FCC004DFDE6 /* hydrogenium */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBD9738B1DAC1FCC004DFDE6 /* Build configuration list for PBXNativeTarget "hydrogenium" */;
+			buildPhases = (
+				EBD9735F1DAC1FCC004DFDE6 /* Sources */,
+				EBD973601DAC1FCC004DFDE6 /* Frameworks */,
+				EBD973611DAC1FCC004DFDE6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = hydrogenium;
+			productName = hydrogenium;
+			productReference = EBD973631DAC1FCC004DFDE6 /* hydrogenium.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EBD973761DAC1FCC004DFDE6 /* hydrogeniumTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBD9738E1DAC1FCC004DFDE6 /* Build configuration list for PBXNativeTarget "hydrogeniumTests" */;
+			buildPhases = (
+				EBD973731DAC1FCC004DFDE6 /* Sources */,
+				EBD973741DAC1FCC004DFDE6 /* Frameworks */,
+				EBD973751DAC1FCC004DFDE6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBD973791DAC1FCC004DFDE6 /* PBXTargetDependency */,
+			);
+			name = hydrogeniumTests;
+			productName = hydrogeniumTests;
+			productReference = EBD973771DAC1FCC004DFDE6 /* hydrogeniumTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EBD973811DAC1FCC004DFDE6 /* hydrogeniumUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBD973911DAC1FCC004DFDE6 /* Build configuration list for PBXNativeTarget "hydrogeniumUITests" */;
+			buildPhases = (
+				EBD9737E1DAC1FCC004DFDE6 /* Sources */,
+				EBD9737F1DAC1FCC004DFDE6 /* Frameworks */,
+				EBD973801DAC1FCC004DFDE6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBD973841DAC1FCC004DFDE6 /* PBXTargetDependency */,
+			);
+			name = hydrogeniumUITests;
+			productName = hydrogeniumUITests;
+			productReference = EBD973821DAC1FCC004DFDE6 /* hydrogeniumUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EBD9735B1DAC1FCC004DFDE6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Sasha Z";
+				TargetAttributes = {
+					EBD973621DAC1FCC004DFDE6 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					EBD973761DAC1FCC004DFDE6 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EBD973621DAC1FCC004DFDE6;
+					};
+					EBD973811DAC1FCC004DFDE6 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EBD973621DAC1FCC004DFDE6;
+					};
+				};
+			};
+			buildConfigurationList = EBD9735E1DAC1FCC004DFDE6 /* Build configuration list for PBXProject "hydrogenium" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EBD9735A1DAC1FCC004DFDE6;
+			productRefGroup = EBD973641DAC1FCC004DFDE6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EBD973621DAC1FCC004DFDE6 /* hydrogenium */,
+				EBD973761DAC1FCC004DFDE6 /* hydrogeniumTests */,
+				EBD973811DAC1FCC004DFDE6 /* hydrogeniumUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EBD973611DAC1FCC004DFDE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBD7BD5B1DE23F7900A2B1D7 /* index.html in Resources */,
+				EBD7BD651DE2400300A2B1D7 /* dude.png in Resources */,
+				EBD7BD621DE2400300A2B1D7 /* block.png in Resources */,
+				EBD7BD5A1DE23F7900A2B1D7 /* app.min.js in Resources */,
+				EBD7BD661DE2400300A2B1D7 /* trees-h.png in Resources */,
+				EBD973711DAC1FCC004DFDE6 /* LaunchScreen.storyboard in Resources */,
+				EBD9736E1DAC1FCC004DFDE6 /* Assets.xcassets in Resources */,
+				EBD9736C1DAC1FCC004DFDE6 /* Main.storyboard in Resources */,
+				EBD7BD631DE2400300A2B1D7 /* clouds-h.png in Resources */,
+				EBD7BD641DE2400300A2B1D7 /* death.png in Resources */,
+				EBD7BD5C1DE23F7900A2B1D7 /* phaser.min.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBD973751DAC1FCC004DFDE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBD973801DAC1FCC004DFDE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EBD9735F1DAC1FCC004DFDE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBD973691DAC1FCC004DFDE6 /* ViewController.swift in Sources */,
+				EBD973671DAC1FCC004DFDE6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBD973731DAC1FCC004DFDE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBD9737C1DAC1FCC004DFDE6 /* hydrogeniumTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBD9737E1DAC1FCC004DFDE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBD973871DAC1FCC004DFDE6 /* hydrogeniumUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EBD973791DAC1FCC004DFDE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBD973621DAC1FCC004DFDE6 /* hydrogenium */;
+			targetProxy = EBD973781DAC1FCC004DFDE6 /* PBXContainerItemProxy */;
+		};
+		EBD973841DAC1FCC004DFDE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBD973621DAC1FCC004DFDE6 /* hydrogenium */;
+			targetProxy = EBD973831DAC1FCC004DFDE6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EBD9736A1DAC1FCC004DFDE6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBD9736B1DAC1FCC004DFDE6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EBD9736F1DAC1FCC004DFDE6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBD973701DAC1FCC004DFDE6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EBD973891DAC1FCC004DFDE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EBD9738A1DAC1FCC004DFDE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EBD9738C1DAC1FCC004DFDE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = hydrogenium/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hydrogenium;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		EBD9738D1DAC1FCC004DFDE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = hydrogenium/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hydrogenium;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		EBD9738F1DAC1FCC004DFDE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = hydrogeniumTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hydrogeniumTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hydrogenium.app/hydrogenium";
+			};
+			name = Debug;
+		};
+		EBD973901DAC1FCC004DFDE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = hydrogeniumTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hydrogeniumTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hydrogenium.app/hydrogenium";
+			};
+			name = Release;
+		};
+		EBD973921DAC1FCC004DFDE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = hydrogeniumUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hydrogeniumUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = hydrogenium;
+			};
+			name = Debug;
+		};
+		EBD973931DAC1FCC004DFDE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = hydrogeniumUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hydrogeniumUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = hydrogenium;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EBD9735E1DAC1FCC004DFDE6 /* Build configuration list for PBXProject "hydrogenium" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBD973891DAC1FCC004DFDE6 /* Debug */,
+				EBD9738A1DAC1FCC004DFDE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBD9738B1DAC1FCC004DFDE6 /* Build configuration list for PBXNativeTarget "hydrogenium" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBD9738C1DAC1FCC004DFDE6 /* Debug */,
+				EBD9738D1DAC1FCC004DFDE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBD9738E1DAC1FCC004DFDE6 /* Build configuration list for PBXNativeTarget "hydrogeniumTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBD9738F1DAC1FCC004DFDE6 /* Debug */,
+				EBD973901DAC1FCC004DFDE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBD973911DAC1FCC004DFDE6 /* Build configuration list for PBXNativeTarget "hydrogeniumUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBD973921DAC1FCC004DFDE6 /* Debug */,
+				EBD973931DAC1FCC004DFDE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EBD9735B1DAC1FCC004DFDE6 /* Project object */;
+}
