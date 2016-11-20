@@ -17,3 +17,10 @@ gulp.task('build', function () {
         }))
         .pipe(gulp.dest('.'))
 });
+
+gulp.task('ios', function () {
+    gulp.src(['js/**/*.js', "native/ios.js"])
+        .pipe(concat('all.js'))
+        .pipe(uglify('app.min.js'))
+        .pipe(gulp.dest('build/ios/hydrogenium/Resources'))
+});

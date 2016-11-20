@@ -3,6 +3,10 @@
  */
 var game = new Phaser.Game(GAME_CANVAS_WIDTH, GAME_CANVAS_HEIGHT, Phaser.AUTO, 'game');
 
+var platform = {};
+platform.isIOS = false;
+platform.name = "Web";
+
 //globals
 var background = null,
     trees = null,

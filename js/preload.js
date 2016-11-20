@@ -4,6 +4,10 @@
 function preload (load) {
     var prefix = "assets/";
 
+    if (platform.isIOS) {
+        prefix = "";
+    }
+
     load.image('trees', prefix + 'trees-h.png');
     load.image('background', prefix + 'clouds-h.png');
     load.spritesheet('death', prefix + 'death.png', 52, 51);
