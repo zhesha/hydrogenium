@@ -6,7 +6,7 @@ var create = {
         background = game.add.tileSprite(0, 0, GAME_CANVAS_WIDTH, GAME_CANVAS_HEIGHT, 'background');
         background.fixedToCamera = true;
 
-        trees = game.add.tileSprite(0, 364, GAME_CANVAS_WIDTH, 116, 'trees');
+        trees = game.add.tileSprite(0, GAME_CANVAS_HEIGHT - TREE_HEIGHT, GAME_CANVAS_WIDTH, TREE_HEIGHT, 'trees');
         trees.fixedToCamera = true;
     },
 

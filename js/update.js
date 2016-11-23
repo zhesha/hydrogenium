@@ -4,7 +4,7 @@
 var update = {
     start: function () {
         text.text = 'Press space to jump';
-        if (jumpKey.isDown && player.body.y >= GAME_CANVAS_HEIGHT-PLAYER_HEIGHT) {
+        if (doJump && player.body.y >= GAME_CANVAS_HEIGHT-PLAYER_HEIGHT) {
             text.text = "";
             gamePhase = "go";
             player.body.velocity.x = PLAYER_VELOCITY;
@@ -28,8 +28,8 @@ var update = {
             trigger = new Phaser.Line(level[blockNumber].triggerX, 0, level[blockNumber].triggerX, GAME_CANVAS_WIDTH);
         }
 
-        if (jumpKey.isDown && player.body.y >= GAME_CANVAS_HEIGHT-PLAYER_HEIGHT)
-        {
+        if (doJump && player.body.y >= GAME_CANVAS_HEIGHT-PLAYER_HEIGHT) {
+            doJump = false;
             player.body.velocity.y = PLAYER_JUMP_VELOCITY;
         }
     },

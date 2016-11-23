@@ -2,8 +2,9 @@
  * Created by sashaz on 12.09.16.
  */
 
-var GAME_CANVAS_WIDTH = 640,
-    GAME_CANVAS_HEIGHT = 480,
+var GAME_CANVAS_WIDTH = window.innerWidth,
+    GAME_CANVAS_HEIGHT = window.innerHeight,
+    TREE_HEIGHT = 116,
     PLAYER_WIDTH = 32,
     PLAYER_HEIGHT = 33,
     PLAYER_GRAVITY = 600,

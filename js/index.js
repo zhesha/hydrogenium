@@ -12,7 +12,7 @@ var background = null,
     trees = null,
     player = null,
     blocks = null,
-    jumpKey = null;
+    doJump = null;
 
 var trigger, blockNumber;
 
@@ -37,8 +37,16 @@ PhaserGame.prototype = {
         create.level();
         text = game.add.text(player.x, game.world.height/2, '', { fontSize: '52px', fill: '#000' });
         //controls.
-        jumpKey = game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
-        game.input.keyboard.addKeyCapture(Phaser.Keyboard.SPACEBAR);
+        if (platform.name == "Web") {
+            game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR).onDown.add(function () {
+                doJump = true;
+            }, this);
+        }
+        if (platform.isIOS) {
+            game.input.onTap.add(function () {
+                doJump = true;
+            }, this);
+        }
     },
 
 
